@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+    background-color: rgb(34, 33, 33);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cuerpo{
+    background: linear-gradient(0deg, rgb(34, 33, 33),90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: -8px;
+}
+.header{
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.listaheader{
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 2px 4px #1BC300;
+}
+.hrheader{
+    border-color: #1BC300;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 25%;
+  }
+  
+  .container h2 {
+    text-align: center;
+  }
+  
+  .container fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .container legend {
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .container label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(34, 33, 33);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1BC300;
+    color: white;
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container button:hover {
+    background-color: #0056b3;
+  }
+  .container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .imagen{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    top: -560px;
+    left: 13%;
+
+  }
+
+
+.footercolor {
+    background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: -440px;
+}
+
+.footertext {
+    color: white;
+}
+
+.footer {
+
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    position: relative;
+    top: -430px;
+}
+
+.left-footer,
+.right-footer {
+    display: inline-block;
+    vertical-align: top; /* Alinea los elementos en la parte superior */
+    width: 40%; /* Ajusta el ancho según sea necesario */
+}
+
+.footer-link {
+  clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  font-size: 20px;
+}
+
+.footer-link a {
+  color: white; /* Cambia el color del texto del enlace */
+  margin: 0 20px;
+}

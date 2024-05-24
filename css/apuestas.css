@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    background-color: rgb(34, 33, 33);
+    position: relative; /* Para posicionamiento absoluto de footercolor */
+    min-height: 100vh;  /* Asegura que el cuerpo tenga al menos la altura de la pantalla */
+    margin: 0;          /* Elimina cualquier margen por defecto */
+    padding: 0;         /* Elimina cualquier padding por defecto */
+}
+
+/* Estilos para el título principal */
+.titulo {
+    text-align: center;
+    margin-top: 25px;
+    box-sizing: border-box; /* Mantiene los márgenes y relleno dentro del ancho total */
+    text-shadow: 0px 2px 4px #1BC300; /* Sombras del texto */
+}
+
+/* Estilos para la sección de apuestas de fútbol */
+.apuestas_futbol {
+    color: #1BC300;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.apuesta_1_futbol,
+.apuesta_2_futbol {
+    height: 50%; /* Altura ocupando la mitad del contenedor padre */
+}
+
+
+.separador {
+    border: solid 1px white; /* Para dar estilo a los separadores */
+}
+
+.titulo_partido {
+    text-align: center;
+    position: relative;
+    top: -20px; /* Ajusta la posición del título del partido */
+    padding-top: 20px;
+}
+
+.cuota_comun {
+    text-align: center;
+    position: relative;
+    bottom: -20px; /* Ajusta la posición */
+}
+
+.cuota {
+    list-style: none;
+    display: inline; /* Permite que las cuotas estén en línea */
+    position: relative;
+    left: -15%; /* Ajusta la posición del elemento */
+    margin-left: 40%; /* Puede ajustarse según el diseño */
+}
+
+.imagen_1,
+.imagen_3 {
+    width: 25%;
+    box-sizing: border-box;
+    position: relative;
+    left: 300px; /* Ajusta la posición */
+}
+
+.imagen_2,
+.imagen_4 {
+    width: 250px;
+    box-sizing: border-box;
+    position: relative;
+    left: 1205px; /* Ajusta la posición */
+    top: -330px; /* Corrige la posición */
+}
+
+/* Estilos para la sección cuerpo con degradado */
+.cuerpo {
+    background: linear-gradient(0deg, rgb(34, 33, 33), 90%, #1BC300); /* Gradiente */
+    width: 100%; /* Abarca todo el ancho */
+    height: 200px; /* Ajusta la altura según el diseño */
+    position: relative; 
+    top: -8px; /* Desplaza la sección cuerpo hacia arriba */
+}
+
+/* Estilos para el encabezado */
+.header {
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%; /* Se asegura de que el encabezado ocupe todo el ancho */
+    padding-top: 10px;
+}
+
+/* Estilos para la lista de encabezado */
+.listaheader {
+    list-style: none; /* Quita los puntos de las listas */
+    display: inline; /* Permite que los elementos estén en la misma línea */
+    margin: 1%;
+    color: white; /* Estilo del texto */
+    font-size: 20px; /* Tamaño del texto */
+    text-shadow: 0px 2px 4px #1BC300; /* Sombras del texto */
+}
+
+.hrheader {
+    border-color: #1BC300; /* Color de los bordes del encabezado */
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1BC300;
+    text-shadow: 0px 0px 4px #000000;
+}
+
+/* Estilos para el footercolor con degradado */
+.footercolor {
+    background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300); /* Gradiente del footercolor */
+    position: absolute; /* Permite posicionamiento libre */
+    bottom: 0;          /* Ubica al final de la página */
+    width: 100%;        /* Abarca todo el ancho */
+    height: 50px;       /* Altura del área del degradado */
+}
+
+/* Estilos para el footer */
+.footer {
+    text-align: center;
+    clear: left; /* Limpia los flotantes */
+    position: relative; /* Asegura que footercolor se apile sobre él */
+    padding: 20px;      /* Espaciado interno */
+    background-color: rgb(34, 33, 33); /* Color de fondo */
+    color: white; /* Color del texto */
+    bottom: 0;          /* Mantiene el footer en la parte inferior */
+}
+
+/* Estilos para los elementos del footer */
+.left-footer,
+.right-footer {
+    display: inline-block;
+    vertical-align: top; /* Alinea verticalmente hacia la parte superior */
+    width: 40%; /* Ajusta el ancho para ambos elementos del footer */
+}
+
+.footer-link {
+    clear: both; /* Asegura que el enlace no se superponga con otros elementos */
+    margin-top: 20px; /* Espacio entre los elementos anteriores y este */
+}
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link rel="icon" href="../img/favicon.png" sizes="500x500" type="image/png">
+    <link rel="stylesheet" href="../css/inicioSesion.css">
+    <script src="../js/validarInicioSesion.js">
+    </script>
+</head>
+<body>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="../img/Sportium.gif" alt="Imagen 1">
+        <img src="../img/Sportium (1).gif" alt="Imagen 2">
+        <img src="../img/Sportium (2).gif" alt="Imagen 3">
+      </div>
+    </div>
+    <script src="../js/carrusel.js"></script>
+
+
+    <div class="cuerpo">
+    </div>
+    <div class="container">
+        <h2>Inicia Sesion en JacaSportium</h2>
+        <form id="Form" action="../html/Elegir.html" method="get" onsubmit="return validarFormulario()">
+          <fieldset>
+            <legend>Información Personal</legend>
+            <div class="form-group">
+              <label for="nombre">Usuario:</label>
+              <input type="text" class="nombre" name="nombre" id="Nombre" >
+              <div class="error" id="errorNombre"></div> 
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña:</label>
+              <input type="password" class="password" name="password" id="Contra" >
+              <div class="error" id="errorContrasena"></div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <input type="checkbox" class="terms" name="terms" id="terms">
+            <label for="terms">Acepto los términos y condiciones de uso.</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" class="subscribe" name="subscribe" id="subscribe">
+            <label for="subscribe">Deseo recibir correos electrónicos con promociones exclusivas y noticias sobre apuestas.</label>
+          </div>
+          <div class="form-group">
+            <label for="subscribe">Todavia no tiene una cuenta &nbsp;   <a href="registro.html" class="l_sesion">Registrese</a></label>
+          </div>
+          <button type="submit">Inicia Sesion</button>
+        </form>
+        <div id="errores"></div>
+      </div>
+
+      <a href="../html/Elegir.html"><img src="../img/logo.png" alt="imagenPrueba" class="imagen"></a>
+
+
+
+      <div class="footercolor">
+      </div>
+  
+      <div class="footer">
+          <nav>
+              <div class="footer-nav-images">
+                  <img src="../img/SPORTSX2-GA-ISO.png" alt="Deportes peligrosos">
+                  <img src="../img/legal1.png" alt="+18 sino pocoyo">
+                  <img src="../img/legal2.1.png" alt="Pagina adulta">
+                  <img src="../img/legal3.png" alt="juega seguro">
+                  <img src="../img/visa2.1.png" alt="pago con visa">
+                  <img src="../img/bizum2.1.png" alt="pago con bizum">
+                  <img src="../img/cripto2.1.png" alt="pago en cripto">
+  
+              </div>
+              <div class="footer-content">
+                  <div class="left-footer">
+                      <h3 class="footertext">Advertencia de Juego</h3>
+                      <p class="footertext">Todos los juegos ofrecidos en este sitio web son exclusivamente para mayores de edad.</p>
+                      <p class="footertext">Reconocemos y promovemos prácticas de juegos responsables.</p>
+                      <p class="footertext">Apostar implica riesgos financieros. Recomendamos jugar con moderación y buscar ayuda si ves que peligra tu salud mental.</p>
+                  </div>
+                  <div class="right-footer">
+                      <h3 class="footertext">Sobre Nosotros</h3>
+                      <p class="footertext">Somos una casa de apuestas comprometida con ofrecer una experiencia de juego emocionante y segura. Brindamos una amplia gama de opciones de apuestas y juegos de azar en un entorno confiable y regulado.</p>
+                      <p class="footertext">Nuestro objetivo es proporcionar entretenimiento de alta calidad mientras priorizamos la integridad y responsabilidad en todas nuestras operaciones.</p>
+                  </div>
+              </div>
+              
+              <div class="footer-link">
+                  <a href="../html/ERC.html" target="_blank">ERP</a>
+                  <a href="../html/CRP.html" target="_blank">CRM</a>
+                  <a href="../html/Elegir.html" target="_blank">INICIO</a>
+                  <a href="../html/Cookie.html" target="_blank">COOKIES</a>
+                  <a href="../html/RSS.html" target="_blank">RSS</a>
+              </div>
+          </nav>
+      </div>
+</body>
+</html>

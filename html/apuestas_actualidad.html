@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Página de Apuestas de Fútbol</title>
+    <link rel="icon" href="../img/favicon.png" sizes="500x500" type="image/png">
+    <link rel="stylesheet" href="../css/apuestas_actualidad.css" />
+</head>
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <img src="../img/logo.png" alt="Logo" class="logo-image">
+                </div>
+                <ul class="listaheader">
+                    <li class="listaheader"><a href="https://www.instagram.com" target="_blank"><img src="../img/insts.png" alt="Instagram" class="social-logo"></a></li>
+                    <li class="listaheader"><a href="https://twitter.com" target="_blank"><img src="../img/x.png" alt="Twitter" class="social-logo"></a></li>
+                    <li class="listaheader"><a href="https://www.facebook.com" target="_blank"><img src="../img/facebo.png" alt="Facebook" class="social-logo"></a></li>
+                    
+                    <li class="listaheader"><a href="../html/Elegir.html"><b>Home</b></a></li>
+                    <li class="listaheader dropdown">
+                        <a href="#" class="dropbtn"><b>Juegos</b></a>
+                        <div class="dropdown-content">
+                            <a href="../html/BlackJack.html">BlackJack</a>
+                            <a href="../html/eleccionJuego.html">Apuesta Deportiva</a>
+                            <a href="../html/Ruleta.html">Ruleta</a>
+                            <a href="../html/CaraCruz.html">CaraCruz</a>
+                            <a href="../html/prueba_tragaperras.html">Tragaperras</a>
+                        </div>
+                    </li>
+                    <li class="listaheader"><a href="../html/SobreNosotros.html">Acerca De Nosotros</a></li>
+                    <li class="listaheader"><a href="../html/AtencionCliente.html">A.T</a></li>
+                    <li class="listaheader"><a href="../Index.html"><button class="registrarte">Cerrar Sesion</button></a></li>
+                </ul>
+                
+            </nav>
+            
+        </header>
+    </div>
+
+    <div class="bet-container">
+        <!-- Apuesta 1 -->
+        <div class="bet" id="bet1">
+          <!-- Imágenes de los equipos -->
+          <img
+            class="image-left"
+            src="../img/Pedro_Sánchez_in_2023.jpg"
+            alt="Equipo 1"
+          />
+          <img
+            class="image-right"
+            src="../img/Pedro_Sánchez_2023_(cropped).jpg"
+            alt="Equipo 2"
+          />
+          <div class="content">
+            <h2>Apuesta 1</h2>
+            <p>¿Dimitirá Pedro Sánchez?</p>
+            <div class="betting-options">
+              <button id="yesButton1">Sí - 1.25</button>
+              <button id="noButton1">No - 8.50</button>
+            </div>
+          </div>
+          <div class="modal" id="betModal1">
+            <div class="modal-content">
+              <span class="close-button" id="closeModal1">&times;</span>
+              <h2>Apuesta - Pedro Sánchez</h2>
+              <label for="betAmount1">Cantidad a apostar:</label>
+              <input
+                type="number"
+                id="betAmount1"
+                min="0"
+                step="0.01"
+                placeholder="Ingrese la cantidad"
+              />
+              <p id="bettingOption1"></p>
+              <button id="calculateButton1">Calcular Ganancia</button>
+              <div id="result1"></div>
+              <button id="placeBetButton1">Realizar Apuesta</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apuesta 2 -->
+        <div class="bet" id="bet2">
+          <img
+            class="image-left_2"
+            src="../img/dandy.png"
+            alt="Equipo 3"
+          />
+          <img
+            class="image-right_2"
+            src="../img/faliyo.jpg"
+            alt="Equipo 4"
+          />
+          <h2>Necroporra</h2>
+          <p class="texto">
+            Elige quien crees que la palmará en 2024 y gana un millón de euros
+          </p>
+          <div class="betting-options">
+            <button class="persona-1">Persona 1</button>
+            <button class="persona-2">Persona 2</button>
+            <button class="persona-3">Persona 3</button>
+          </div>
+          <button id="ver-resumen-necroporra">Ver Resumen Necroporra</button>
+          <div id="resumen-necroporra"></div>
+          <div id="necroModal" class="modal">
+            <div class="modal-content">
+              <span class="close-button" id="closeNecro">&times;</span>
+              <h2>Necroporra</h2>
+              <div class="betting-options">
+                <input
+                  type="text"
+                  id="nombre-persona"
+                  placeholder="Escribe el nombre de la persona..."
+                />
+                <button id="confirmar-apuesta">Realizar Apuesta</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apuesta 3 -->
+        <div class="bet" id="bet3">
+          <img
+            class="image-left_3"
+            src="../img/bidenjoe_070723gn06-1-removebg-preview.png"
+            alt="Equipo 5"
+          />
+          <img
+            class="image-right_3"
+            src="../img/kim_jong_un_PNG13-removebg-preview.png"
+            alt="Equipo 6"
+          />
+          <div class="content">
+            <h2>Apuesta 3</h2>
+            <p>¿Empezará la 3ª Guerra Mundial?</p>
+            <div class="betting-options">
+              <button id="yesButton2">Sí - 25.50</button>
+              <button id="noButton2">No - 2.23</button>
+            </div>
+          </div>
+          <div class="modal" id="betModal2">
+            <div class="modal-content">
+              <span class="close-button" id="closeModal2">&times;</span>
+              <h2>Apuesta - 3ª Guerra Mundial</h2>
+              <label for="betAmount2">Cantidad a apostar:</label>
+              <input
+                type="number"
+                id="betAmount2"
+                min="0"
+                step="0.01"
+                placeholder="Ingrese la cantidad"
+              />
+              <p id="bettingOption2"></p>
+              <button id="calculateButton2">Calcular Ganancia</button>
+              <div id="result2"></div>
+              <button id="placeBetButton2">Realizar Apuesta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="footercolor">
+    </div>
+
+    <div class="footer">
+        <nav>
+            <div class="footer-nav-images">
+                <img src="../img/SPORTSX2-GA-ISO.png" alt="Deportes peligrosos">
+                <img src="../img/legal1.png" alt="+18 sino pocoyo">
+                <img src="../img/legal2.1.png" alt="Pagina adulta">
+                <img src="../img/legal3.png" alt="juega seguro">
+                <img src="../img/visa2.1.png" alt="pago con visa">
+                <img src="../img/bizum2.1.png" alt="pago con bizum">
+                <img src="../img/cripto2.1.png" alt="pago en cripto">
+
+            </div>
+            <div class="footer-content">
+                <div class="left-footer">
+                    <h3 class="footertext">Advertencia de Juego</h3>
+                    <p class="footertext">Todos los juegos ofrecidos en este sitio web son exclusivamente para mayores de edad.</p>
+                    <p class="footertext">Reconocemos y promovemos prácticas de juegos responsables.</p>
+                    <p class="footertext">Apostar implica riesgos financieros. Recomendamos jugar con moderación y buscar ayuda si ves que peligra tu salud mental.</p>
+                </div>
+                <div class="right-footer">
+                    <h3 class="footertext">Sobre Nosotros</h3>
+                    <p class="footertext">Somos una casa de apuestas comprometida con ofrecer una experiencia de juego emocionante y segura. Brindamos una amplia gama de opciones de apuestas y juegos de azar en un entorno confiable y regulado.</p>
+                    <p class="footertext">Nuestro objetivo es proporcionar entretenimiento de alta calidad mientras priorizamos la integridad y responsabilidad en todas nuestras operaciones.</p>
+                </div>
+            </div>
+            
+            <div class="footer-link">
+                <a href="../html/ERC.html" target="_blank">ERP</a>
+                <a href="../html/CRP.html" target="_blank">CRM</a>
+                <a href="../Index.html" target="_blank">INICIO</a>
+                <a href="../html/Cookie.html" target="_blank">COOKIES</a>
+                <a href="../html/RSS.html" target="_blank">RSS</a>
+            </div>
+      </nav>
+    </div>
+
+    <script src="../js/apuestas_actualidad.js"></script>
+  </body>
+</html>

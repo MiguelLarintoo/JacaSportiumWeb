@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+    background-color: rgb(34, 33, 33);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.header {
+    min-height: 100px; /* Altura mínima del header */
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+}
+
+
+.listaheader {
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 2px 4px #1BC300;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+}
+
+
+.logo-container {
+    float: left; /* Alinea el contenedor del logo a la izquierda */
+    width: 110px; /* Establece el ancho en 50px */
+    height: 110px; /* Establece la altura en 50px */
+    margin-top: -20px; /* Mueve el contenedor 4px hacia arriba */
+}
+
+.logo-image {
+    width: 100%; /* Ajusta la anchura al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.listaheader button {
+    border: 2px solid #efb810; /* Borde dorado */
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    margin-top: 15px; /* Mover botones más abajo */
+    font-size: 15px; /* Aumentar tamaño de texto en 2px */
+    padding: 5px 15px; /* Aumentar tamaño del botón en 2px */
+}
+
+.listaheader button.registrarte {
+    background-color: #ff0000; /* Rojo */
+    float: right; /* Mover a la derecha */
+    margin-right: 30px; /* Margen derecho de 20px */
+}
+
+.listaheader button.iniciar-sesion {
+    background-color: #1BC300; /* Verde */
+    float: right; /* Mover a la derecha */
+    margin-right: 30px; /* Margen derecho de 20px */
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1BC300;
+    text-shadow: 0px 0px 4px #000000;
+}
+
+
+
+.listaheader button:hover {
+    filter: brightness(80%); /* Oscurece el botón al pasar el cursor sobre él */
+}
+
+.hrheader {
+    border-color: #1BC300;
+}
+
+.cuerpo {
+    background: linear-gradient(0deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    position: relative;
+    top: -20px;
+    color: #fff;
+    text-align: center;
+}
+
+.cuerpo h1 {
+    text-align: center;
+    top: 20px;
+    text-shadow: 0px 2px 4px #1BC300;
+    font-size: 40px;
+    color: white;
+    position: relative;
+
+}
+
+.footercolor {
+    background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: -30px;
+    clear: left;
+}
+
+.footertext {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+
+.left-footer,
+.right-footer {
+    width: 48%;
+    border: 4px solid #efb810;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-nav-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-nav-images img {
+    width: 60px;
+    height: 50px;
+    margin: 5px; /* Ajustar el margen entre las imágenes según sea necesario */
+}
+
+.footer-nav-images img:nth-child(2) {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-nav-images img:nth-child(4) {
+    width: 150px;
+    height: 40px;
+}
+.footer-nav-images img:nth-child(5) {
+    width: 140px;
+    height: 60px;
+}
+
+.footer-nav-images img:nth-child(6) {
+    width: 80px;
+    height: 70px;
+}
+.footer-link {
+    clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    font-size: 20px;
+  }
+  
+  .footer-link a {
+    color: white; /* Cambia el color del texto del enlace */
+    margin: 0 20px;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*carrusel*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1BC300;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: #000 4px solid;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #1BC300;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.coin {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+}
+  
+.coin img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+#coinImage {
+    width: 217px;
+    height: 232px;
+}
+
+.coin .flipped {
+    transform: rotateY(180deg);
+}
+
+.coin-spin {
+    animation: spin 3s forwards;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* CSS para los botones */
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.input-and-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game input, #game button {
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+#game input {
+    width: 150px; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+}
+
+#game button {
+    background-color: #1BC300; /* Verde para el botón "Cara" */
+    color: white;
+    border: 4px solid #efb810; /* Borde dorado */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    margin: 0 10px; /* Espacio entre botones */
+}
+
+#game button:last-of-type {
+    background-color: #ff0000; /* Rojo para el botón "Cruz" */
+}
+
+#game #result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#coinImage {
+    width: 217px;
+    height: 232px;
+    margin-top: 40px; /* Aumentar el margen superior */
+    margin-bottom: 20px; /* Agregar margen inferior */
+}
+
+.spin {
+    animation: spin 2s ease-in-out;
+}
+
+@keyframes spin {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(360deg); }
+}
+
+
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+    display: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+    animation: confetti-fall 4s linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+#betSummary {
+    margin-top: 20px; /* Agregar un margen superior */
+    font-size: 20px;
+    color: #fff; 
+    position: relative; /* Establecer posición relativa */
+    z-index: 1; /* Asegurar que esté por encima de otros elementos */
+}

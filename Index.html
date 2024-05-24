@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleccion de Juego</title>
+    <link rel="icon" href="img/favicon.png" sizes="500x500" type="image/png">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            let respuesta = confirm("¿Tienes más de 18 años?");
+            if (respuesta == true) {
+                //accede
+            } else {
+                // Redirigir a buscar gatos en Google
+                window.location.href = "https://www.google.com/search?q=gatos";
+            }
+        });
+    </script>
+    
+        <div id="cookie-popup" class="cookie-popup">
+            <div class="cookie-content">
+                <h2>Política de cookies</h2>
+                <p>Este sitio web utiliza cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web.</p>
+                <div class="cookie-buttons">
+                    <button id="accept-cookies">Aceptar</button>
+                    <button id="deny-cookies">Negar</button>
+                </div>
+            </div>
+        </div>
+
+    <div class="header">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="Logo" class="logo-image">
+                </div>
+                <ul class="listaheader">
+                    <li class="listaheader"><a href="https://www.instagram.com" target="_blank"><img src="img/insts.png" alt="Instagram" class="social-logo"></a></li>
+                    <li class="listaheader"><a href="https://twitter.com" target="_blank"><img src="img/x.png" alt="Twitter" class="social-logo"></a></li>
+                    <li class="listaheader"><a href="https://www.facebook.com" target="_blank"><img src="img/facebo.png" alt="Facebook" class="social-logo"></a></li>
+                    
+                    <li class="listaheader"><a href="/Index.html"><b>Home</b></a></li>
+                    <li class="listaheader dropdown">
+                        <a href="#" class="dropbtn"><b>Juegos</b></a>
+                        <div class="dropdown-content">
+                            <a href="html/Registro.html">BlackJack</a>
+                            <a href="html/Registro.html">Apuesta Deportiva</a>
+                            <a href="html/Registro.html">Ruleta</a>
+                            <a href="html/Registro.html">CaraCruz</a>
+                            <a href="html/Registro.html">Tragaperras</a>
+                        </div>
+                    </li>
+                    <li class="listaheader"><a href="html/SobreNosotros.html">Acerca De Nosotros</a></li>
+                    <li class="listaheader"><a href="html/AtencionCliente.html">A.T</a></li>
+                    <li class="listaheader"><a href="html/inicioSesion.html"><button class="iniciar-sesion">Iniciar Sesión</button></a></li>
+                    <li class="listaheader"><a href="html/Registro.html"><button class="registrarte">Registrarte</button></a></li>
+                </ul>
+                
+            </nav>
+            
+        </header>
+    </div>
+    <div class="cuerpo">
+        <script src="js/cookie-popup.js"></script>
+        <br>
+        <h1>JacaSportium</h1>
+        <h3>APUESTA APUESTA APUESTA GANA GANA GANA</h3>
+
+        <div class="juego">
+            <a href="html/Registro.html" target="_blank">
+                <img src="img/MesaBlackJack.jpg" alt="Imagen de Juego"/>
+            </a>
+            <h3>BlackJack</h3>
+            <p>El clasico blackjack no hace falta presentarse solo tu dinero.</p>
+        </div>
+        
+        <div class="juego">
+            <a href="html/Registro.html" target="_blank">
+                <img src="img/ApuestaMejorada.jpg" alt="Imagen de Juego"/>
+            </a>
+            <h3>Apuesta Deportiva</h3>
+            <p>Apuesta en mas de 5 tipos de juegos online.</p>
+        </div>
+        
+        <div class="juego">
+            <a href="html/Registro.html" target="_blank">
+                <img src="img/ruleta.jpeg" alt="Imagen de Juego"/>
+            </a>
+            <h3>Ruleta</h3>
+            <p>Juega a la maravillosa ruleta imperial.</p>
+        </div>
+
+        <div class="juego">
+            <a href="html/Registro.html" target="_blank">
+                <img src="img/traga-perra.png" alt="Imagen de Juego"/>
+            </a>
+            <h3>Tragaperras</h3>
+            <p>La mejor traga-perra nunca antes usada.</p>
+        </div>
+
+        <div class="juego">
+            <a href="html/Registro.html" target="_blank">
+                <img src="img/cara-o-cruz.jpg" alt="Imagen de Juego"/>
+            </a>
+            <h3>Cara o Cruz</h3>
+            <p>Que el azar elija tu destino en el juego mas simple y franco.</p>
+        </div>
+    </div>
+
+    <div class="footercolor">
+    </div>
+
+    <div class="footer">
+        <nav>
+            <div class="footer-nav-images">
+                <img src="img/SPORTSX2-GA-ISO.png" alt="Deportes peligrosos">
+                <img src="img/legal1.png" alt="+18 sino pocoyo">
+                <img src="img/legal2.1.png" alt="Pagina adulta">
+                <img src="img/legal3.png" alt="juega seguro">
+                <img src="img/visa2.1.png" alt="pago con visa">
+                <img src="img/bizum2.1.png" alt="pago con bizum">
+                <img src="img/cripto2.1.png" alt="pago en cripto">
+
+            </div>
+            <div class="footer-content">
+                <div class="left-footer">
+                    <h3 class="footertext">Advertencia de Juego</h3>
+                    <p class="footertext">Todos los juegos ofrecidos en este sitio web son exclusivamente para mayores de edad.</p>
+                    <p class="footertext">Reconocemos y promovemos prácticas de juegos responsables.</p>
+                    <p class="footertext">Apostar implica riesgos financieros. Recomendamos jugar con moderación y buscar ayuda si ves que peligra tu salud mental.</p>
+                </div>
+                <div class="right-footer">
+                    <h3 class="footertext">Sobre Nosotros</h3>
+                    <p class="footertext">Somos una casa de apuestas comprometida con ofrecer una experiencia de juego emocionante y segura. Brindamos una amplia gama de opciones de apuestas y juegos de azar en un entorno confiable y regulado.</p>
+                    <p class="footertext">Nuestro objetivo es proporcionar entretenimiento de alta calidad mientras priorizamos la integridad y responsabilidad en todas nuestras operaciones.</p>
+                </div>
+            </div>
+            
+            <div class="footer-link">
+                <a href="/html/ERC.html" target="_blank">ERP</a>
+                <a href="/html/CRP.html" target="_blank">CRM</a>
+                <a href="../html/Elegir.html">INICIO</a>
+                <a href="html/Cookie.html" target="_blank">COOKIES</a>
+                <a href="html/RSS.html" target="_blank">RSS</a>
+            </div>
+        </nav>
+    </div>
+    
+</body>
+</html>

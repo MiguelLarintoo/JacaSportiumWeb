@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+    background-color: rgb(34, 33, 33);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.header {
+    min-height: 100px; /* Altura mínima del header */
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+}
+
+
+.listaheader {
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 2px 4px #1BC300;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+}
+
+
+.logo-container {
+    float: left; /* Alinea el contenedor del logo a la izquierda */
+    width: 110px; /* Establece el ancho en 50px */
+    height: 110px; /* Establece la altura en 50px */
+    margin-top: -20px; /* Mueve el contenedor 4px hacia arriba */
+}
+
+.logo-image {
+    width: 100%; /* Ajusta la anchura al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.listaheader button {
+    border: 2px solid #efb810; /* Borde dorado */
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    margin-top: 15px; /* Mover botones más abajo */
+    font-size: 15px; /* Aumentar tamaño de texto en 2px */
+    padding: 5px 15px; /* Aumentar tamaño del botón en 2px */
+}
+
+.listaheader button.registrarte {
+    background-color: #ff0000; /* Rojo */
+    float: right; /* Mover a la derecha */
+    margin-right: 30px; /* Margen derecho de 20px */
+}
+
+.listaheader button.iniciar-sesion {
+    background-color: #1BC300; /* Verde */
+    float: right; /* Mover a la derecha */
+    margin-right: 30px; /* Margen derecho de 20px */
+}
+
+
+
+.listaheader button:hover {
+    filter: brightness(80%); /* Oscurece el botón al pasar el cursor sobre él */
+}
+
+.hrheader {
+    border-color: #1BC300;
+}
+
+.footercolor {
+    background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: 0px;
+    clear: left;
+}
+
+.footertext {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+.left-footer,
+.right-footer {
+    width: 48%;
+    border: 4px solid #efb810;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-nav-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-nav-images img {
+    width: 60px;
+    height: 50px;
+    margin: 5px; /* Ajustar el margen entre las imágenes según sea necesario */
+}
+
+.footer-nav-images img:nth-child(2) {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-nav-images img:nth-child(4) {
+    width: 150px;
+    height: 40px;
+}
+.footer-nav-images img:nth-child(5) {
+    width: 140px;
+    height: 60px;
+}
+
+.footer-nav-images img:nth-child(6) {
+    width: 80px;
+    height: 70px;
+}
+.footer-link {
+    clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.footer-link a {
+    color: white; /* Cambia el color del texto del enlace */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*carrusel*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1BC300;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: #000 4px solid;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #1BC300;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

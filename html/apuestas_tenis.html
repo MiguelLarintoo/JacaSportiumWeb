@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página de Apuestas de Tenis</title>
+    <link rel="icon" href="../img/favicon.png" sizes="500x500" type="image/png">
+    <link rel="stylesheet" href="../css/apuestas_tenis.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+          <nav>
+              <div class="logo-container">
+                  <img src="../img/logo.png" alt="Logo" class="logo-image">
+              </div>
+              <ul class="listaheader">
+                  <li class="listaheader"><a href="https://www.instagram.com" target="_blank"><img src="../img/insts.png" alt="Instagram" class="social-logo"></a></li>
+                  <li class="listaheader"><a href="https://twitter.com" target="_blank"><img src="../img/x.png" alt="Twitter" class="social-logo"></a></li>
+                  <li class="listaheader"><a href="https://www.facebook.com" target="_blank"><img src="../img/facebo.png" alt="Facebook" class="social-logo"></a></li>
+                  
+                  <li class="listaheader"><a href="../html/Elegir.html"><b>Home</b></a></li>
+                  <li class="listaheader dropdown">
+                      <a href="#" class="dropbtn"><b>Juegos</b></a>
+                      <div class="dropdown-content">
+                          <a href="../html/BlackJack.html">BlackJack</a>
+                          <a href="../html/eleccionJuego.html">Apuesta Deportiva</a>
+                          <a href="../html/Ruleta.html">Ruleta</a>
+                          <a href="../html/CaraCruz.html">CaraCruz</a>
+                          <a href="../html/prueba_tragaperras.html">Tragaperras</a>
+                      </div>
+                  </li>
+                  <li class="listaheader"><a href="../html/SobreNosotros.html">Acerca De Nosotros</a></li>
+                  <li class="listaheader"><a href="../html/AtencionCliente.html">A.T</a></li>
+                  <li class="listaheader"><a href="../Index.html"><button class="registrarte">Cerrar Sesion</button></a></li>
+              </ul>
+              
+          </nav>
+          
+      </header>
+  </div>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <section class="tennis-matches">
+        <h2 class="partido_tenis">Partidos de Tenis</h2>
+
+        <!-- Ejemplo de partido 1 -->
+        <div class="tennis-match">
+          <!-- Colocación de las imágenes -->
+          <img
+            class="image-left"
+            src="../img/rafa_1-removebg-preview.png"
+            alt="Rafael Nadal"
+          />
+          <img
+            class="image-right"
+            src="../img/novak_bueno-removebg-preview.png"
+            alt="Novak Djokovic"
+          />
+
+          <h3>Rafael Nadal vs. Novak Djokovic</h3>
+          <p>Fecha: 15 de junio de 2024</p>
+          <p>Hora: 14:00</p>
+
+          <h4>Opciones de Apuesta:</h4>
+          <div class="betting-options">
+            <button>Rafael Nadal - 2.00</button>
+            <button>Novak Djokovic - 1.80</button>
+            <button>Más de 25.5 - 1.90</button>
+            <button>Menos de 25.5 - 1.90</button>
+          </div>
+        </div>
+
+        <!-- Ejemplo de partido 2 -->
+        <div class="tennis-match">
+          <img
+            class="image-left_2"
+            src="../img/serena-removebg-preview.png"
+            alt="Serena"
+          />
+          <img
+            class="image-right_2"
+            src="../img/naomi-removebg-preview.png"
+            alt="Naomi"
+          />
+          <h3>Serena Williams vs. Naomi Osaka</h3>
+          <p>Fecha: 16 de junio de 2024</p>
+          <p>Hora: 16:00</p>
+
+          <h4>Opciones de Apuesta:</h4>
+          <div class="betting-options">
+            <button>Serena Williams - 2.10</button>
+            <button>Naomi Osaka - 1.75</button>
+            <button>Más de 23.5 - 2.00</button>
+            <button>Menos de 23.5 - 1.80</button>
+          </div>
+        </div>
+
+        <!-- Ejemplo de partido 3 -->
+        <div class="tennis-match">
+          <!-- Colocación de las imágenes -->
+          <img
+            class="image-left_3"
+            src="../img/alcaraz-removebg-preview.png"
+            alt="Rafael Nadal"
+          />
+          <img
+            class="image-right_3"
+            src="../img/sinner-removebg-preview.png"
+            alt="Novak Djokovic"
+          />
+
+          <h3>Carlos Alcaraz vs. Jannik Sinner</h3>
+          <p>Fecha: 2 de junio de 2024</p>
+          <p>Hora: 19:00</p>
+
+          <h4>Opciones de Apuesta:</h4>
+          <div class="betting-options">
+            <button>Carlos Alcaraz - 2.00</button>
+            <button>Jannik Sinner - 1.80</button>
+            <button>Más de 25.5 - 1.90</button>
+            <button>Menos de 25.5 - 1.90</button>
+          </div>
+        </div>
+
+        <!-- Pop-up modal para ingresar la apuesta -->
+        <div class="modal" id="betModal">
+          <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <!-- Para cerrar el modal -->
+            <h2>Apuesta</h2>
+            <label for="betAmount">Cantidad a apostar:</label>
+            <input
+              type="number"
+              id="betAmount"
+              min="0"
+              step="0.01"
+              placeholder="Ingrese la cantidad"
+            />
+
+            <p id="bettingOption"></p>
+            <!-- Muestra la opción de apuesta -->
+
+            <button id="calculateButton">Calcular Ganancia</button>
+            <!-- Botón para calcular -->
+
+            <button id="placeBetButton">Realizar Apuesta</button>
+            <!-- Botón para realizar la apuesta -->
+
+            <div id="result"></div>
+            <!-- Muestra el resultado -->
+          </div>
+        </div>
+
+        <!-- Botón para ver el resumen de las apuestas -->
+        <button id="resumenButton">Ver Resumen de Apuestas</button>
+
+        <!-- Pop-up modal para mostrar el resumen -->
+        <div class="modal" id="resumenModal">
+          <div class="modal-content">
+            <span class="close-button" id="closeResumenModal">&times;</span>
+            <h2>Resumen de Apuestas</h2>
+            <div id="apuestasResumen"></div>
+            <p>Total apostado: <span id="totalApostado">0</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Script de JavaScript -->
+    <script src="../js/apuestas_tenis.js"></script>
+    <div class="footercolor">
+    </div>
+    <div class="footer">
+        <nav>
+            <div class="footer-nav-images">
+                <img src="https://content001.bet365.es/SportsContent/Global/Footer/SPORTSX2-GA-ISO.png" class="" title="" alt="">
+                <img src="../img/legal1.png" alt="Descripción de la imagen 1">
+                <img src="../img/legal2.1.png" alt="Descripción de la imagen 1">
+                <img src="../img/legal3.png" alt="Descripción de la imagen 1">
+                <img src="../img/visa2.1.png" alt="Descripción de la imagen 1">
+                <img src="../img/bizum2.1.png" alt="Descripción de la imagen 1">
+                <img src="../img/cripto2.1.png" alt="Descripción de la imagen 1">
+    
+            </div>
+            <div class="footer-content">
+                <div class="left-footer">
+                    <h3 class="footertext">Advertencia de Juego</h3>
+                    <p class="footertext">Todos los juegos ofrecidos en este sitio web son exclusivamente para mayores de edad.</p>
+                    <p class="footertext">Reconocemos y promovemos prácticas de juegos responsables.</p>
+                    <p class="footertext">Apostar implica riesgos financieros. Recomendamos jugar con moderación y buscar ayuda si ves que peligra tu salud mental.</p>
+                </div>
+                <div class="right-footer">
+                    <h3 class="footertext">Sobre Nosotros</h3>
+                    <p class="footertext">Somos una casa de apuestas comprometida con ofrecer una experiencia de juego emocionante y segura. Brindamos una amplia gama de opciones de apuestas y juegos de azar en un entorno confiable y regulado.</p>
+                    <p class="footertext">Nuestro objetivo es proporcionar entretenimiento de alta calidad mientras priorizamos la integridad y responsabilidad en todas nuestras operaciones.</p>
+                </div>
+            </div>
+            
+            <div class="footer-link">
+              <a href="../html/ERC.html" target="_blank">aquí iría enlace a erc/src si tan solo tuviera uno</a>
+            </div>
+        </nav>
+    </div>
+  </body>
+</html>
